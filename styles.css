@@ -195,7 +195,11 @@ body:has(#contact:target) .nav-link[href="#contact"]::after { transform: scaleX(
 .subsection-title { margin: 0 0 15px; color: var(--purple-dark); font-size: 14px; font-weight: 550; }
 .internship-card { min-height: 132px; padding: 19px; }
 .internship-card h3 { margin: 8px 0 3px; color: var(--purple-dark); font-size: 14px; font-weight: 550; }
-.internship-card p { margin: 0; color: var(--muted); font-size: 11px; }
+.internship-card p { margin: 0 0 14px; color: var(--muted); font-size: 11px; }
+.internship-card .button { min-height: 38px; }
+.internship-connections { display: flex; justify-content: center; margin-top: 20px; }
+.button-connections { min-height: 43px; padding-inline: 22px; box-shadow: 0 7px 17px rgba(124,92,252,.2); }
+.button-connections:hover { box-shadow: 0 10px 22px rgba(124,92,252,.28); }
 /* Certifications */
 .certifications-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 14px; }
 .certification-card { display: flex; min-height: 160px; flex-direction: column; align-items: flex-start; gap: 12px; padding: 19px; }
