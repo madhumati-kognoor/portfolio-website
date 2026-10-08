@@ -181,11 +181,15 @@ body:has(#contact:target) .nav-link[href="#contact"]::after { transform: scaleX(
 .project-actions { display: flex; flex-wrap: wrap; gap: 7px; margin-top: auto; }
 
 /* Hackathons */
-.achievements-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px; }
-.achievement-card { display: flex; min-height: 155px; align-items: flex-start; gap: 15px; padding: 21px; }
-.achievement-mark { color: var(--purple); font-size: 11px; font-weight: 600; }
+.achievements-grid { display: grid; max-width: 760px; grid-template-columns: repeat(auto-fit,minmax(min(100%,320px),1fr)); gap: 16px; margin-inline: auto; }
+.achievement-card { min-width: 0; overflow: hidden; }
+.certificate-preview { display: block; overflow: hidden; background: #FAF8FF; }
+.certificate-preview img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: contain; }
 .achievement-copy h3 { margin: 0 0 7px; color: var(--purple-dark); font-size: 14px; font-weight: 550; line-height: 1.5; }
+.achievement-copy { padding: 19px 21px 21px; }
 .achievement-copy p { margin: 0 0 12px; color: var(--muted); font-size: 11px; line-height: 1.7; }
+.achievement-facts { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+.achievement-facts span { padding: 4px 9px; border: 1px solid var(--line); border-radius: var(--pill); color: var(--purple-dark); background: #FAF8FF; font-size: 10px; }
 .document-link { color: var(--purple-dark); font-size: 10px; font-weight: 600; }
 .document-link span { margin-left: 4px; color: var(--purple); }
 .document-link:hover { color: var(--purple); text-decoration: underline; text-underline-offset: 3px; }
